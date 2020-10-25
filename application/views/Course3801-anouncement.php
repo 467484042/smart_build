@@ -37,12 +37,12 @@
         <button id="sb" type="submit">Search</button>
 
         <?php if(!$this->session->userdata('logged_in')) : ?>
-            <a href="./student_pro.html">Hi, Smart Build!<img src=<?php echo base_url().'smart_build/assets/images/profile.png';?> width="40px" height="40px"></a>
+            <a href=<?php echo base_url().'smart_build/index.php/login';?>>Hi, Smart Build!<img src=<?php echo base_url().'smart_build/assets/images/profile.png';?> width="40px" height="40px"></a>
         <?php endif;?>
         
         <?php if($this->session->userdata('logged_in')) : ?>
-            <a href="./student_pro.html">Hi, <?php echo $_SESSION["studentname"];?><img src=<?php echo base_url().'smart_build/assets/images/profile.png';?> width="40px" height="40px"></a>
-	    	<?php endif;?>
+            <a href=<?php echo base_url().'smart_build/index.php/course';?>>Hi, <?php echo $_SESSION["studentname"];?><img src=<?php echo base_url().'smart_build/assets/images/profile.png';?> width="40px" height="40px"></a>
+	      <?php endif;?>
     </div>
 
     

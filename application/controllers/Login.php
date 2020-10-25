@@ -25,7 +25,7 @@ class Login extends CI_Controller {
                     
                     $this->sessionSetting($email);
                     echo $_SESSION["email"];
-                    header('Location: http://localhost/smart_build/index.php/dashboard');
+                    header('Location: '.base_url() .'smart_build/index.php/dashboard');
                 }
                 
             }
