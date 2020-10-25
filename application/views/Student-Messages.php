@@ -16,11 +16,11 @@
     <nav>
         <h1>SmartEd</h1>
         <ul>
-            <li><img src="../assets/images/dashboard.png"><a href="http://localhost/smart_build/index.php/dashboard" >Dashboard</a></li>
-            <li><img src="../assets/images/courses.png"><a href="http://localhost/smart_build/index.php/course" >Course</a></li>
-            <li><img src="../assets/images/schedule.png"><a href="http://localhost/smart_build/index.php/schedule" >Schedule</a></li>
-            <li><img src="../assets/images/messages.png"><a href="http://localhost/smart_build/index.php/message" >Masseges</a></li>
-            <li><img src="../assets/images/setting.png"><a href="http://localhost/smart_build/index.php/setting" >Setting</a></li>
+        <li><img src=<?php echo base_url().'assets/images/dashboard-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/dashboard';?> target="_self">Dashboard</a></li>
+            <li><img src=<?php echo base_url().'assets/images/course-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/course';?> target="_self">Course</a></li>
+            <li><img src=<?php echo base_url().'assets/images/discussion-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/discussion';?> target="_self">Discussion</a></li>
+            <li><img src=<?php echo base_url().'assets/images/analytics-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801';?> target="_self">Analytics</a></li>
+            <li><img src=<?php echo base_url().'assets/images/setting-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/setting';?> target="_self">Setting</a></li>
         </ul>
         <img src="../assets/images/learning.png" >
     </nav>

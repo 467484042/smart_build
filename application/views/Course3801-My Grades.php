@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href=<?php echo base_url().'smart_build/assets/css/style.css';?>>
+    <link rel="stylesheet" href=<?php echo base_url().'smart_build/assets/css/bootstrap.min.css';?>>
 
     <title>Course3801-My Grades</title>
 </head>
 <body>
 <box>
     <nav id="coursebar">
-        <a href="http://localhost/smart_build/index.php/course"><img id="exit" src="../assets/images/exit.png" ></a>
+        <a href=<?php echo base_url().'smart_build/index.php/course';?>><img id="exit" src=<?php echo base_url().'smart_build/assets/images/exit.png';?>></a>
         <h1 id="course-h1">DECO3801</h1>
         <h2 id="course-h2">Design Computing</h2>
         <h3 id="course-h3">Studio3-Build</h3>
         <ul id="course-ul">
-            <li><img src=<?php echo base_url().'smart_build/assets/images/announcement.png';?>><a href="http://localhost/smart_build/deco3801" target="_self">Anouncement</a></li>
-            <li><img src=<?php echo base_url().'smart_build/assets/images/CouresePROFILE.png';?>><a href="http://localhost/smart_build/deco3801/courseProfile" target="_self">Course Profile</a></li>
-            <li><img src=<?php echo base_url().'smart_build/assets/images/staff.png';?>><a href="http://localhost/smart_build/deco3801/courseStaff" target="_self">Course Staff</a></li>
-            <li><img src=<?php echo base_url().'smart_build/assets/images/help.png';?>><a href="http://localhost/smart_build/deco3801/courseHelp" target="_self">Course Help</a></li>
-            <li><img src=<?php echo base_url().'smart_build/assets/images/LearningResource.png';?>><a href="http://localhost/smart_build/deco3801/learningResource" target="_self">Learning Resource</a></li>
-            <li><img src=<?php echo base_url().'smart_build/assets/images/Assessment.png';?>><a href="http://localhost/smart_build/deco3801/assessment" target="_self">Assessment</a></li>
-            <li><img src=<?php echo base_url().'smart_build/assets/images/globalDiscussion.png';?>><a href="http://localhost/smart_build/deco3801/discussionBoard" target="_self">Discussion Board</a></li>
-            <li><img src=<?php echo base_url().'smart_build/assets/images/Grade.png';?>><a href="http://localhost/smart_build/deco3801/myGrades" target="_self">My Grades</a></li>
-            <li><img src=<?php echo base_url().'smart_build/assets/images/ANALYTICS.png';?>><a href="http://localhost/smart_build/deco3801/smartED" target="_self">SmartED Analytics</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/announcement.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801';?> target="_self">Anouncement</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/CouresePROFILE.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801/courseProfile';?> target="_self">Course Profile</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/staff.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801/courseStaff';?> target="_self">Course Staff</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/help.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801/courseHelp';?> target="_self">Course Help</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/LearningResource.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801/learningResource';?> target="_self">Learning Resource</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/Assessment.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801/assessment';?> target="_self">Assessment</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/globalDiscussion.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801/discussionBoard';?> target="_self">Discussion Board</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/Grade.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801/myGrades';?> target="_self">My Grades</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/ANALYTICS.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801/smartED';?> target="_self">SmartED Analytics</a></li>
         </ul>
-        <img id="course-image" src="../assets/images/learning.png" >
+        <img id="course-image" src=<?php echo base_url().'smart_build/assets/images/learning.png';?>>
     </nav>
 
     <div id="Course-stat-bar">
@@ -37,11 +37,11 @@
         <button id="sb" type="submit">Search</button>
 
         <?php if(!$this->session->userdata('logged_in')) : ?>
-            <a href="./student_pro.html">Hi, Smart Build!<img src="../assets/images/profile.png" width="40px" height="40px"></a>
+            <a href="./student_pro.html">Hi, Smart Build!<img src=<?php echo base_url().'smart_build/assets/images/profile.png';?> width="40px" height="40px"></a>
         <?php endif;?>
         
         <?php if($this->session->userdata('logged_in')) : ?>
-            <a href="./student_pro.html">Hi, <?php echo $_SESSION["studentname"];?><img src="../assets/images/profile.png" width="40px" height="40px"></a>
+            <a href="./student_pro.html">Hi, <?php echo $_SESSION["studentname"];?><img src=<?php echo base_url().'smart_build/assets/images/profile.png';?> width="40px" height="40px"></a>
 	    	<?php endif;?>
     </div>
 
@@ -55,24 +55,24 @@
         <figure>
             <h3>Recent Grades</h3>
             <hr>
-            <img src="../assets/images/grade1.png" width="80px"height="80px">
+            <img src=<?php echo base_url().'smart_build/assets/images/grade1.png';?> width="80px"height="80px">
             <p>Planet Paper</p>
             <p><span style="color:grey">Submitted:5/15/19</span></p>
             <p><span style="background-color: rgb(36, 243, 36); border-radius: 0.7em;">100/100</span></p>
         </figure>
         <figure>
-            <img src="../assets/images/grade1.png" width="80px"height="80px">
+            <img src=<?php echo base_url().'smart_build/assets/images/grade1.png';?> width="80px"height="80px">
             <p>Monday Night Moon Viewing</p>
             <p><span style="background-color:rgb(186, 241, 102); border-radius: 0.7em;">10/12</span></p>
         </figure>
         <figure>
-            <img src="../assets/images/grade1.png" width="80px"height="80px">
+            <img src=<?php echo base_url().'smart_build/assets/images/grade1.png';?> width="80px"height="80px">
             <p>Celestial Body Presentation</p>
             <p><span style="color:grey">Submitted:5/15/19</span></p>
             <p><span style="background-color: rgb(36, 243, 36); border-radius: 0.7em;">200/200</span></p>
         </figure>
         <figure>
-            <img src="../assets/images/Total.JPG" width="80px"height="80px">
+            <img src=<?php echo base_url().'smart_build/assets/images/Total.JPG';?> width="80px"height="80px">
             <p>Total</p>
             <p><span style="background-color: rgb(36, 243, 36); border-radius: 0.7em;">330/347</span></p>
         </figure>

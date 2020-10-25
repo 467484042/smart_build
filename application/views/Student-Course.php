@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href=<?php echo base_url().'smart_build/assets/css/style.css';?>>
+    <link rel="stylesheet" href=<?php echo base_url().'smart_build/assets/css/bootstrap.min.css';?>>
 
     <title>Course</title>
 </head>
@@ -22,11 +22,11 @@
             <option value="DECO2800">DECO2800</option>
         </select>
         <ul>
-        <li><img src="../assets/images/dashboard-icon.png"><a href=<?php echo base_url().'smart_build/index.php/dashboard';?> target="_self">Dashboard</a></li>
-            <li><img src="../assets/images/course-icon.png"><a href=<?php echo base_url().'smart_build/index.php/course';?> target="_self">Course</a></li>
-            <li><img src="../assets/images/discussion-icon.png"><a href=<?php echo base_url().'smart_build/index.php/discussion';?> target="_self">Discussion</a></li>
-            <li><img src="../assets/images/analytics-icon.png"><a href=<?php echo base_url().'smart_build/index.php/deco3801';?> target="_self">Analytics</a></li>
-            <li><img src="../assets/images/setting-icon.png"><a href=<?php echo base_url().'smart_build/index.php/setting';?> target="_self">Setting</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/dashboard-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/dashboard';?> target="_self">Dashboard</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/course-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/course';?> target="_self">Course</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/discussion-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/discussion';?> target="_self">Discussion</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/analytics-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/deco3801';?> target="_self">Analytics</a></li>
+            <li><img src=<?php echo base_url().'smart_build/assets/images/setting-icon.png';?>><a href=<?php echo base_url().'smart_build/index.php/setting';?> target="_self">Setting</a></li>
         </ul>
     </nav>
 

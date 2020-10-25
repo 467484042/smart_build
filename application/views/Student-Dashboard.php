@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/dashboard.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href=<?php echo base_url().'smart_build/assets/css/style.css';?>>
+    <link rel="stylesheet" href=<?php echo base_url().'smart_build/assets/css/bootstrap.min.css';?>>
+    <link rel="stylesheet" href=<?php echo base_url().'smart_build/assets/css/dashboard.css';?>>
 
     <title>Dashboard</title>
 </head>
