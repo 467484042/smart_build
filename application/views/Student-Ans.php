@@ -15,7 +15,7 @@
 <body>
 <box>
     <nav>
-        <a href=<?php echo base_url().'smart_build/index.php/home';?> target="_self"><img id="logo" src=<?php echo base_url().'smart_build/assets/images/SmartED.png';?> width="200px" height="46px"></a>
+		<a href=<?php echo base_url().'smart_build/index.php/login';?> target="_self"><img id="logo" src="../assets/images/SmartED.png" width="200px" height="46px"></a>
         <select>
             <option value ="DECO3801">DECO3801</option>
             <option value ="COMP3301">COMP3301</option>
